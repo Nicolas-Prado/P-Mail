@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Mail</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="scripts/php/response.php" method="post">
+        <!--<div id="header">
+            <h1>Welcome to P-Mail!</h1>
+        </div>
+        
+        <div id="fillheader"></div>-->
+
+        <div>
+            <label for="sender">Email Sender</label>
+            <input type="text" name="sender" id="sender">
+        </div>
+
+        <div id="passwordDiv">
+            <label for="password">Sender password(App password)</label>
+            <input type="text" name="password" id="password">
+        </div>
+
+        <p>OBS: To use the P-Main you will need an app password of your gmail, if you dont know how to get that <a href="help.html">click me!</a></p>
+
+        <div>
+            <label for="destiny">Email Destiny</label>
+            <input type="text" name="destiny" id="destiny">
+        </div>
+
+        <div>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject">
+        </div>
+        
+        <div>
+            <label for="message">Message</label>
+            <div class="messageWrapper"><textarea name="message" id="message" cols="100" rows="21"></textarea></div>
+        </div>
+
+        <div class="buttonWrapper"><input type="submit" value="Send"></div>
+    </form>
+</body>
+
+</html>
